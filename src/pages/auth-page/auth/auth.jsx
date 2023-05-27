@@ -44,7 +44,7 @@ export const Auth = () => {
 
     return (
         <div data-test-id="auth" className="login-page">
-            <ErrorNotification page={auth}/>
+            <Loader page={auth}/>
             {!isValidAuth && <Loader page={auth}/>}
             {!isValidAuth && statusResponse === 400 || statusResponse === 429 || !statusResponse ?
                 <div className="login">

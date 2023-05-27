@@ -23,18 +23,3 @@
     width: 150px !important;
     height: 150px !important;
 }
-
-
-@media (max-width: 952px) {
-    .loader svg {
-        width: 96px !important;
-        height: 96px !important;
-    }
-}
-
-@media (max-width: 586px) {
-    .loader svg {
-        width: 48px !important;
-        height: 48px !important;
-    }
-}
