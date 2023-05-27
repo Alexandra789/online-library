@@ -148,3 +148,22 @@
     border-image-slice: 1;
     padding-bottom: 8px;
 }
+
+a.categories-link.section.title.open {
+    border-bottom: 1px solid;
+    width: 255px;
+    border-image: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    border-image-slice: 1;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+a.categories-link.section.title.open h5{
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a.categories-link.section.title.open ~ .section.categories-link{
+    margin-top: 42px;
+}

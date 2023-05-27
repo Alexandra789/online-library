@@ -76,9 +76,7 @@ export function Categories(props) {
                     {open: props.isMobileCategoriesOpen}
                 )}>
                 <h5 className="categories-title">Витрина книг</h5>
-                {showElements || book.error ? '' :
-                    <img src={arrow} alt="arrow img"/>
-                }
+                <img src={arrow} alt="arrow img"/>
             </NavLink>
             {showElements || book.error ? '' :
                 <div className="categories-wrapper">
