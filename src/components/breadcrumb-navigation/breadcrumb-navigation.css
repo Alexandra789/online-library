@@ -1,0 +1,36 @@
+.breadcrumb {
+    background: #F9F9FA;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    margin-top: 18px;
+    margin-bottom: 42px;
+}
+
+.breadcrumb-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb p, .breadcrumb a {
+    color: #A7A7A7;
+}
+
+.breadcrumb-container span {
+    margin: 0 4px;
+    color: #A7A7A7;
+}
+
+@media (max-width: 952px) {
+    .breadcrumb {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 586px) {
+    .breadcrumb p, .breadcrumb a {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

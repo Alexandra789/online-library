@@ -1,0 +1,33 @@
+h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn {
+    text-align: center;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+}
+
+button.disabled {
+    background: #EBEBEB;
+    cursor: auto;
+}
+
+button.disabled:hover {
+    box-shadow: none;
+}
+
+.btn:hover {
+    box-shadow: 0 2px 5px rgba(54, 54, 54, 0.1);
+}

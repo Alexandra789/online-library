@@ -1,0 +1,150 @@
+.categories-link.section.title {
+    max-width: 255px;
+    transition: 0.2s;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    width: 100%;
+}
+
+.categories-link.hidden {
+    display: none;
+}
+
+.categories-link .name {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.categories-link .count {
+    margin-left: 6px;
+    color: #A7A7A7;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.categories-link img {
+    width: 24px;
+    height: 24px;
+    transform: rotate(180deg);
+    filter: invert(20%) sepia(6%) saturate(3%) hue-rotate(68deg) brightness(15%) contrast(93%);
+    margin-right: 12px;
+}
+
+.categories-link.active .count, .categories-link.active .name {
+    display: inline;
+}
+
+.categories-link.active .categories-title {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.categories-link:hover .name span {
+    background: #A7A7A7;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #A7A7A7;
+    color: #A7A7A7;
+}
+
+.categories-link.active .name span {
+    background: #363636;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #363636;
+    color: #363636;
+}
+
+.section, .categories-wrapper {
+    transition: 0.2s;
+}
+
+.categories-wrapper ~ .section:nth-of-type(1) {
+    margin-top: 42px;
+}
+
+.section.active.title {
+    margin-bottom: 16px;
+}
+
+.account-navigation .section:nth-of-type(1):not(.title) {
+    margin-top: 32px;
+}
+
+.section.active img, .section:hover img {
+    filter: none;
+    display: block;
+}
+
+.categories-link.section.title.active:hover img {
+    transform: rotate(0);
+}
+
+.categories-link.section.title.active ~ .section {
+    margin-top: 42px;
+}
+
+.section.open img {
+    transform: rotate(0);
+}
+
+.categories-link.active .count {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #363636;
+}
+
+.categories-link:hover .categories-title, .categories-link:hover .name {
+    background: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #FF5253;
+    color: #FF5253;
+}
+
+.categories-wrapper, .reviews-wrapper {
+    max-height: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.section.title.open ~ .categories-wrapper, .reviews-wrapper.open {
+    max-height: initial;
+    visibility: visible;
+    display: block;
+}
+
+.section.categories-link {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 42px;
+    max-width: 255px;
+}
+
+.section:last-of-type {
+    margin-bottom: 0;
+}
+
+.categories-link.active .name,
+.categories-link.active .categories-title,
+.section.active, .section:hover .categories-title, .section.active .categories-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section.active, .section:hover {
+    border-bottom: 1px solid;
+    width: 255px;
+    border-image: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+    border-image-slice: 1;
+    padding-bottom: 8px;
+}

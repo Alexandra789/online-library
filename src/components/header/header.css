@@ -1,0 +1,129 @@
+.header {
+    padding-top: 32px;
+    position: relative;
+    padding-bottom: 24px;
+    display: none;
+}
+
+.header.visible {
+    display: block;
+}
+
+.header.shadow {
+    box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 120px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1px;
+}
+
+.header__account {
+    margin-left: auto;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.header__account-btn {
+    display: flex;
+    align-items: center;
+}
+
+.header__account img {
+    width: 58px;
+    height: 58px;
+    filter: drop-shadow(0px 2px 4px rgba(191, 196, 201, 0.2)) drop-shadow(0px 3px 4px rgba(191, 196, 201, 0.18)) drop-shadow(0px 1px 5px rgba(191, 196, 201, 0.24));
+}
+
+.header__account-name {
+    margin-right: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+
+.header__dropdown {
+    position: absolute;
+    max-width: 270px;
+    padding: 32px 24px;
+    z-index: 10;
+    background: white;
+    text-align: end;
+    box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+    border-radius: 0 0 10px 10px;
+    display: none;
+    top: 82px;
+}
+
+.header__dropdown a {
+    width: 100%;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.header__dropdown a:last-of-type {
+    margin-bottom: 0;
+}
+
+.header__dropdown.open {
+    display: block;
+}
+
+.close-account-dropdown-btn {
+    background: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 114px;
+    z-index: 2;
+    transform: scale(0);
+    cursor: auto;
+}
+
+.close-account-dropdown-btn.visible {
+    transform: scale(1);
+}
+
+@media (max-width: 952px) {
+    .close-account-dropdown-btn {
+        display: none;
+        transform: scale(1);
+    }
+
+    .header__account {
+        display: none;
+    }
+
+    .header__logo {
+        display: none;
+    }
+}
+
+@media (max-width: 586px) {
+    .header {
+        padding-top: 24px;
+    }
+
+    .header__title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

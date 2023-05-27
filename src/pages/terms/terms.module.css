@@ -1,0 +1,72 @@
+.terms ol {
+    counter-reset: li;
+}
+
+.terms ol ol {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.terms ol ol ol {
+    margin-bottom: 16px;
+}
+
+.terms li:before {
+    counter-increment: li;
+    content: counters(li, ".") ". ";
+}
+
+.terms .text {
+    margin-left: 30px;
+    margin-bottom: 16px;
+}
+
+.terms .text:last-of-type {
+    margin-bottom: 0;
+}
+
+h3.title {
+    margin-bottom: 32px;
+}
+
+.block {
+    margin-bottom: 32px;
+}
+
+.block:last-of-type {
+    margin-bottom: 62px;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.subtitle:last-of-type {
+    margin-bottom: 0;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width: 586px) {
+    h3.title {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+
+    .text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .terms_content {
+        margin-bottom: 24px;
+    }
+}

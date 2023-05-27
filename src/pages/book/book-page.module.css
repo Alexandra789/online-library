@@ -1,0 +1,15 @@
+.details_book_page {
+    margin-bottom: 42px;
+}
+
+@media (max-width: 952px) {
+    .details_book_page {
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 586px) {
+    .details_book_page {
+        margin-bottom: 20px;
+    }
+}

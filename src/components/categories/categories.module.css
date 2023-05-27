@@ -1,0 +1,56 @@
+.categories {
+    max-width: 279px;
+    width: 100%;
+    margin-right: 6px;
+}
+
+.list {
+    margin-bottom: 42px;
+    padding-left: 20px;
+}
+
+.item {
+    margin-bottom: 16px;
+    padding-left: 4px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.item img {
+    width: 19px;
+    height: 19px;
+}
+
+.item:first-of-type {
+    padding-left: 0;
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.category.item {
+    max-width: 231px;
+    margin-bottom: 16px;
+}
+
+.link {
+    display: flex;
+}
+
+.info.item {
+    margin-bottom: 42px;
+}
+
+.info.item:last-of-type {
+    margin-bottom: 0;
+}
+
+@media (max-width: 952px) {
+    .categories {
+        display: none;
+    }
+}
+
+

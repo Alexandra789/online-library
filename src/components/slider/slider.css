@@ -1,0 +1,117 @@
+.preview-swiper {
+    margin-top: 16px;
+}
+
+.swiper-wrapper.slider-without-scroll {
+    justify-content: center;
+}
+
+.swiper-wrapper.slider-without-scroll {
+    cursor: auto;
+}
+
+.swiper-wrapper.swiper-slide {
+    cursor: grab;
+}
+
+.swiper-wrapper.slider-without-scroll .swiper-slide:hover img {
+    background: none;
+    border: none;
+}
+
+.swiper-wrapper {
+    cursor: grab;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.preview-swiper .swiper-slide img {
+    border: 1px solid #BFC4C9;
+    border-radius: 3px;
+}
+
+.swiper-slide.swiper-slide-thumb-active img, .swiper-slide:hover img {
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%) border-box;
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.main-swiper .swiper-slide:hover img {
+    border-radius: 12px;
+}
+
+.swiper-scrollbar {
+    background: white;
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag:first-of-type {
+    display: none;
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag:last-of-type {
+    background: #A7A7A7;
+    border-radius: 4px;
+    height: 4px;
+}
+
+.preview-swiper .swiper-wrapper {
+    height: 86px;
+    padding-bottom: 12px;
+}
+
+.main-swiper .swiper-pagination {
+    bottom: 0;
+    display: none;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 9px;
+    max-width: 9px;
+    height: 9px;
+    background: #363636;
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    max-width: 7px;
+    height: 7px;
+    flex: auto;
+    background: #BFC4C9;
+    margin: 0 8px 0 0 !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet:last-of-type {
+    margin-right: 0 !important;
+}
+
+.preview-swiper .swiper-wrapper:hover ~ .swiper-scrollbar {
+    opacity: 1 !important;
+}
+
+@media (max-width: 952px) {
+    .preview-swiper {
+        display: none;
+    }
+
+    .main-swiper {
+        padding-bottom: 24px;
+    }
+
+    .main-swiper .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 586px) {
+    .main-swiper {
+        /*padding-bottom: 35px;*/
+    }
+}

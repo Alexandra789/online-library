@@ -1,0 +1,68 @@
+.registration .form__title {
+    margin-bottom: 8px;
+}
+
+.form__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+    color: #363636;
+    margin-bottom: 32px;
+}
+
+.next-step-registration-btn {
+    margin-top: 48px;
+}
+
+.input-wrapper .help-text, .input-wrapper .error-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: rgb(167, 167, 167);
+    margin-top: 14px;
+    margin-left: 2px;
+}
+
+.input-wrapper .help-text[data-test-id="hint"] {
+    color: rgb(167, 167, 167);
+}
+
+.form .error-text span, .form .error-text.red, .input-wrapper .error-text[data-test-id="hint"].required {
+    color: rgb(244, 44, 79);
+}
+
+.input-wrapper.error {
+    border-bottom: 1px solid rgb(244, 44, 79);
+}
+
+.error-text[data-test-id="hint"] .non-color {
+    color: rgb(167, 167, 167);
+}
+
+.error-text[data-test-id="hint"].red .non-color {
+    color: rgb(244, 44, 79);
+}
+
+.hidden {
+    display: none;
+}
+
+.input-wrapper .check-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: 44px;
+}
+
+#passwordInput {
+    padding-right: 61px;
+}
+
+#emailInput ~ .error-text {
+    color: rgb(244, 44, 79);
+}
+
+

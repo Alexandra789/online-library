@@ -1,0 +1,48 @@
+.book-list__card {
+    margin-top: 32px;
+}
+
+.book-list__card.hidden {
+    display: none;
+}
+
+.book-list__main-content {
+    max-width: 825px;
+    width: 100%;
+}
+
+.hightlight {
+    color: #FF5253
+}
+
+.not-found {
+    height: 55vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+.not-found.show {
+    display: flex;
+}
+
+.not-found .text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #A7A7A7;
+}
+
+@media (max-width: 952px) {
+    .book-list__card {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 586px) {
+    .not-found .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}

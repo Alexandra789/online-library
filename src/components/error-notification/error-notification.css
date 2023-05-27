@@ -1,0 +1,81 @@
+.error-notification {
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.error-notification.hidden {
+    display: none;
+}
+
+.error-notification-wrapper {
+    padding: 24px 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #FEEBEA;
+    border: 1.5px solid #F42C4F;
+    border-radius: 5px;
+}
+
+.error-notification .error-text {
+    display: flex;
+    align-items: flex-start;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.warning-icon {
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+}
+
+.close-error-notification-btn {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289Z' fill='%23363636'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z' fill='%23363636'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 952px) {
+    .error-notification {
+        top: 62px;
+    }
+
+    .cross-notification {
+        width: 16px;
+        height: 16px;
+    }
+
+    .error-notification-wrapper {
+        padding: 24px 16px;
+    }
+
+    .warning-icon {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .error-notification .error-text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 586px) {
+    .error-notification {
+        top: 56px;
+    }
+
+    .error-notification-wrapper {
+        padding: 12px 16px;
+    }
+
+    .error-notification .error-text {
+        max-width: 222px;
+    }
+}

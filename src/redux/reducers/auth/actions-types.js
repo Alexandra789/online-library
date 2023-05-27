@@ -1,0 +1,14 @@
+/* eslint-disable */
+
+const userActionTypes = {
+    LOGIN_START: "LOGIN_START",
+    LOGIN_SUCCESS: "LOGIN_SUCCESS",
+    LOGIN_FAILURE: "LOGIN_FAILURE",
+    LOG_OUT: "LOG_OUT",
+    REGISTER_START: "REGISTER_START",
+    REGISTER_SUCCESS: "REGISTER_SUCCESS",
+    REGISTER_FAILURE: "REGISTER_FAILURE",
+    UPDATE_PAGE: "UPDATE_PAGE",
+};
+
+export default userActionTypes;

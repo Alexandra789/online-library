@@ -1,0 +1,455 @@
+.card {
+    margin-top: 42px;
+}
+
+.main_info {
+    margin-bottom: 42px;
+    display: grid;
+    justify-items: start;
+}
+
+.author .wrapper {
+    display: flex;
+}
+
+.main_info div:nth-child(1) {
+    grid-row: 1/3;
+}
+
+.main_info div:nth-child(2) {
+    grid-column: 2;
+}
+
+.main_info .img {
+    width: 445px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.main_info .img img {
+    height: 100%;
+    border-radius: 12px;
+}
+
+h3.title {
+    margin-bottom: 24px;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h5.title {
+    margin-bottom: 32px;
+}
+
+h5.line {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EBEBEB;
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.reviews .title.line {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.reviews .title:hover img, .reviews .title.active img {
+    transform: rotate(180deg);
+}
+
+h5.author {
+    color: #A7A7A7;
+    margin-bottom: 32px;
+}
+
+.button {
+    padding: 14px 16px;
+    min-width: 350px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about_book {
+    margin-top: 62px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #363636;
+    margin-bottom: 24px;
+}
+
+.description:last-of-type {
+    margin-bottom: 0;
+}
+
+.rating {
+    margin-bottom: 62px;
+}
+
+.rating .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.stars img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.stars img:last-of-type {
+    margin-right: 0;
+}
+
+.rating .wrapper p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 24px;
+}
+
+.count {
+    margin-left: 24px;
+}
+
+.detailed_info {
+    margin-bottom: 62px;
+}
+
+.detailed_info .blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 184px;
+    width: 100%;
+    gap: 16px 32px;
+    align-content: space-between;;
+}
+
+.detailed_info .block {
+    display: flex;
+    max-width: 635px;
+}
+
+.detailed_info .subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A7A7A7;
+    width: 120px;
+    margin-right: 70px;
+}
+
+.detailed_info .text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.reviews .block {
+    margin-bottom: 42px;
+}
+
+.reviews .block:last-of-type {
+    margin-bottom: 42px;
+}
+
+.reviews .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.reviews .author_img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .author p {
+    margin-left: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #727272;
+}
+
+.reviews .stars {
+    margin-bottom: 16px;
+}
+
+.reviews .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #363636;
+}
+
+.detailed_info ~ h5 {
+    margin-bottom: 0;
+}
+
+.title span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A7A7A7;
+    margin-left: 6px;
+    margin-right: 24px;
+}
+
+.title ~ .button_review {
+    margin-top: 42px;
+}
+
+.button_review {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media (max-width: 952px) {
+    h3.title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 32px;
+    }
+
+    h5.author {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    h5.title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    p.subtitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .block .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .main_info .img {
+        width: 136px;
+        height: 198px;
+        margin-right: 32px;
+    }
+
+    .main_info {
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    }
+
+    .about_book {
+        margin-top: 48px;
+        grid-column: 1/3;
+    }
+
+    .rating .detailed_info, .about_book {
+        margin-bottom: 52px;
+    }
+
+    .detailed_info .blocks {
+        height: 210px;
+    }
+
+    .detailed_info .block {
+        max-width: 305px;
+    }
+
+    .detailed_info .block .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 34px;
+        max-width: 105px;
+    }
+
+    .detailed_info .block .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    h5.line {
+        border-bottom: 1px solid #F9F9FA;
+    }
+
+    .rating, .detailed_info {
+        margin-bottom: 52px;
+    }
+
+    button.button {
+        width: 100%;
+    }
+
+    .main_info {
+        justify-items: initial;
+    }
+}
+
+@media (max-width: 586px) {
+    .detailed_info .block .subtitle {
+        max-width: 95px;
+    }
+
+    .detailed_info .blocks {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 16px 0;
+    }
+
+    .main_info .img {
+        width: 188px;
+        height: 260px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    h3.title {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 8px;
+        margin-top: 16px;
+    }
+
+    h5.author {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 42px;
+    }
+
+    button.button {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        min-width: auto;
+    }
+
+    .about_book {
+        margin-top: 42px;
+    }
+
+    h5.title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+
+    h5.line {
+        padding-bottom: 8px;
+    }
+
+    .description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about_book, .rating, .about_book {
+        margin-bottom: 42px;
+    }
+
+    .reviews .block:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .author {
+        margin-bottom: 8px;
+    }
+
+    .author .wrapper {
+        flex-wrap: wrap;
+        max-width: 250px;
+        margin-left: 18px;
+    }
+
+    .author .wrapper p {
+        width: 100%;
+        margin-bottom: 3px;
+        margin-left: 0;
+    }
+
+    .author .wrapper p:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .stars img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .reviews .stars {
+        margin-bottom: 8px;
+    }
+
+    .reviews .block {
+        margin-bottom: 32px;
+    }
+
+    .block .text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .main_info div:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .main_info div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .main_info .img {
+        margin: 0 auto 25px;
+    }
+
+    .title ~ .button_review {
+        margin-top: 20px;
+    }
+
+    .rating .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .rating .wrapper .stars img {
+        width: 34px;
+        height: 34px;
+        margin-right: 12px;
+    }
+
+    .rating .wrapper .stars img:last-of-type {
+        margin-right: 0;
+    }
+
+    .rating .wrapper p {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .rating.empty {
+        margin-bottom: 24px;
+    }
+}
+

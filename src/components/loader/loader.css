@@ -1,0 +1,40 @@
+.loader {
+    position: fixed;
+    z-index: 9999999;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(54, 54, 54, 0.3);
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+}
+
+.loader.hidden {
+    display: none;
+}
+
+.loader div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader svg {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+
+@media (max-width: 952px) {
+    .loader svg {
+        width: 96px !important;
+        height: 96px !important;
+    }
+}
+
+@media (max-width: 586px) {
+    .loader svg {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
